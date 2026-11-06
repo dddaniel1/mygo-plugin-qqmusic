@@ -1,0 +1,20 @@
+{
+  "QQ Music": "QQ音乐",
+  "Quality": "音质",
+  "standard, high or lossless (beyond your account's rights QQ Music serves a 60s preview instead)": "standard、high 或 lossless（超出账号权益的歌会返回 60 秒试听）",
+  "Cookie": "Cookie",
+  "Optional: sign in to y.qq.com in your browser, copy the Cookie header of a request to y.qq.com or c.y.qq.com (DevTools > Network), and paste it here. Unlocks VIP songs and featured playlists.": "可选：在浏览器登录 y.qq.com 后，从开发者工具（Network 标签）复制任意发往 y.qq.com 或 c.y.qq.com 请求的 Cookie 请求头，粘贴到这里。可解锁 VIP 歌曲和精选歌单。",
+  "Charts": "排行榜",
+  "New Releases": "新碟上架",
+  "Playlists": "精选歌单",
+  "Hot Songs": "热歌",
+  "Liked": "我喜欢",
+  "All charts": "全部榜单",
+  "Featured Playlists": "精选歌单",
+  "Open one to hear it whole": "点开即可收听整份歌单",
+  "Playlist": "歌单",
+  "No lyrics": "没有歌词",
+  "This track cannot be played (VIP or region limited)": "这首歌无法播放（可能需要 VIP 或受地区限制）",
+  "Paste your QQ Music cookie in the plugin's settings to play this track": "在插件设置里粘贴 QQ 音乐的 Cookie 后才能播放这首歌",
+  "Paste your QQ Music cookie in the plugin's settings to open this playlist": "在插件设置里粘贴 QQ 音乐的 Cookie 后才能打开这份歌单"
+}

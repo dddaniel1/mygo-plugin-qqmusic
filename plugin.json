@@ -1,0 +1,44 @@
+{
+  "id": "qqmusic",
+  "name": "QQ Music",
+  "version": "0.2.3",
+  "minAppVersion": "0.1.8",
+  "main": "index.js",
+  "playback": "stream",
+  "permissions": {
+    "network": [
+      "*.qq.com",
+      "*.gtimg.cn"
+    ]
+  },
+  "settings": [
+    {
+      "key": "quality",
+      "label": "Quality",
+      "help": "standard, high or lossless (beyond your account's rights QQ Music serves a 60s preview instead)"
+    }
+  ],
+  "navigation": [
+    {
+      "builtin": "home"
+    },
+    {
+      "builtin": "liked"
+    },
+    {
+      "title": "Charts",
+      "page": "charts",
+      "icon": "chart"
+    },
+    {
+      "title": "New Releases",
+      "page": "newalbums",
+      "icon": "calendar"
+    },
+    {
+      "title": "Playlists",
+      "page": "playlists",
+      "icon": "playlist"
+    }
+  ]
+}
