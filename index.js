@@ -356,6 +356,32 @@ export function setSetting() {
   cache.clear();
 }
 
+// --- hearts ---
+// Likes are kept here rather than written to QQ Music: the like-write CGI
+// rejects third-party sessions outright (verified 2026-11), so a heart in
+// MyGo is a local bookmark. The server-side "我喜欢" list still shows below.
+function localLikes() {
+  return load("likes", []);
+}
+function toggleLike(id, on) {
+  const likes = localLikes().filter((x) => x !== String(id));
+  if (on) likes.push(String(id));
+  save("likes", likes);
+}
+
+export async function isLiked({ ids }) {
+  const set = new Set(localLikes());
+  return Object.fromEntries(ids.map((id) => [id, set.has(String(id))]));
+}
+
+export async function like({ id, on }) {
+  toggleLike(id, on);
+}
+
+export function likeEpisode({ id, on }) {
+  toggleLike(id, on);
+}
+
 // --- pages ---
 
 // The listener's liked songs: their "我喜欢" playlist on QQ Music.
